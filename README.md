@@ -222,22 +222,42 @@ Follow this sequence for the 1-2 minute demonstration video:
 ### Prerequisites
 - Flutter SDK `^3.13.4` or higher (tested with Flutter 3.27+)
 - Dart SDK `^3.13.4`
+- Android Studio / Android Emulator, iOS Simulator, Chrome, or macOS Desktop
 
-### Installation
+### Quick Start
 ```bash
-# Clone the repository
-git clone <YOUR_REPO_URL>
-cd machine_round_test
+# 1. Clone the repository
+git clone https://github.com/viramsingh/novastore_flutter_machine_test.git
+cd novastore_flutter_machine_test
 
-# Install dependencies
+# 2. Install dependencies
 flutter pub get
 
-# Run static analysis (0 errors, 0 warnings)
+# 3. Run static analysis (0 errors, 0 warnings)
 flutter analyze
 
-# Run unit and widget tests
+# 4. Run automated tests (100% passing)
 flutter test
 
-# Run the app on connected device (Android Emulator, macOS Desktop, or Chrome)
+# 5. Launch the application
 flutter run
+```
+
+### Demo Accounts for Evaluator Testing
+Pre-populated on the login screen with one-tap quick-fill chips:
+| Username | Password | Notes |
+| :--- | :--- | :--- |
+| `emilys` | `emilyspass` | Primary test account (DummyJSON) |
+| `michaelw` | `michaelwpass` | Secondary account (shows user-isolated cart separation) |
+
+### Targeted Platform Run Commands
+```bash
+# Run on Android Emulator
+flutter run -d android
+
+# Run on Chrome (Web)
+flutter run -d chrome
+
+# Run on macOS Desktop
+flutter run -d macos
 ```
